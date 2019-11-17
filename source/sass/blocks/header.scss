@@ -1,0 +1,23 @@
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 11px 20px 16px 20px;
+}
+
+.header__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+  .st0 {
+      fill: #FDC305;
+  }
+  .st1 {
+      fill: #F06351;
+    }
+  .st2 {
+    fill: $Black;
+  }
+}

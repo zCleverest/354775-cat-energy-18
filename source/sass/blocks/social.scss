@@ -1,0 +1,25 @@
+.social {
+  padding: 22px 0;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.social__link {
+  svg {
+    path, circle{
+      fill: #666666;
+    }
+  }
+
+  &:hover {
+    svg {
+      path, circle{
+        fill: $Green;
+      }
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
