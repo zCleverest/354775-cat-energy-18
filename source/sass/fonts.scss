@@ -1,0 +1,12 @@
+@mixin fonts($font-name, $font-weight, $font-style, $font-url-1, $font-url-2) {
+  @font-face {
+    font-family: $font-name;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    src: url($font-url-1), url($font-url-2);
+    font-display: swap;
+  }
+}
+
+@include fonts("oswald-medium", "normal", 500, "../fonts/oswaldmedium.woff2", "../fonts/oswaldmedium.woff");
+@include fonts("oswald-regular", "normal", 400, "../fonts/oswaldregular.woff2", "../fonts/oswaldregular.woff");

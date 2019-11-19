@@ -1,0 +1,19 @@
+.footer {
+  background-color: $Grey;
+}
+
+.footer__logo {
+  svg{
+    path {
+      fill: $Black;
+    }
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

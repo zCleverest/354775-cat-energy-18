@@ -1,0 +1,20 @@
+.heading {
+  font-family: "oswald-regular", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: $Black;
+}
+
+.heading--level-1 {
+  color: #ffffff;
+}
+
+.heading--level-2 {
+  line-height: 60px;
+}
+
+.heading--level-3 {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
