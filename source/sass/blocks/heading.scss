@@ -18,3 +18,12 @@
   line-height: 16px;
   text-transform: uppercase;
 }
+
+/* =====================================================================================
+Media min-width: 768px*/
+
+@media (min-width: 768px) {
+  .heading--level-2 {
+    font-size: 60px;
+  }
+}

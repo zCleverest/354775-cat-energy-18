@@ -1,3 +1,46 @@
-// .main-nav {
+.main-nav__list {
+  display: none;
+}
 
-// }
+.main-nav__link {
+  font-family: "oswald-regular", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: $Black;
+
+  &:hover {
+    opacity: 0.6;
+    border-bottom: 2px solid transparent;
+  }
+
+  &:active {
+    opacity: 0.6;
+    border-bottom: 2px solid transparent;
+  }
+}
+
+/* =====================================================================================
+Media min-width: 768px*/
+
+@media (min-width: 768px) {
+  .main-nav__list {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+    height: auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__link {
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 8px;
+  }
+
+  .main-nav__link--active {
+    border-bottom: 2px solid $Green;
+  }
+}

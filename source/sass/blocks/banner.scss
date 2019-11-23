@@ -1,15 +1,72 @@
 .banner {
-  padding: 28px 20px;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
+  background-size: cover;
   background-color: $Green;
+  margin-bottom: 135px;
+}
+
+.banner__content {
+  min-height: 305px;
+  padding: 28px 20px;
+}
+
+.banner__heading {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .banner__title {
+  margin-bottom: 28px;
   font-family: "oswald-regular", "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+  text-align: center;
   color: #ffffff;
+}
+
+.banner__image {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.banner_to-form {
+  width: 100%;
+  margin-bottom: 22px;
+}
+
+/* =====================================================================================
+Media min-width: 768px*/
+
+@media (min-width: 768px) {
+  .banner {
+    padding-left: 120px;
+    background-image: none;
+    background-color: #ffffff;
+  }
+
+  .banner__heading {
+    width: 415px;
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 60px;
+    color: $Black;
+    text-align: left;
+  }
+
+  .banner__title {
+    font-size: 20px;
+    line-height: 20px;
+    color: $Black;
+    text-align: left;
+  }
+
+  // .banner__image {
+  //   width: 709px;
+  //   height: 609px;
+  //   z-index: 1;
+  // }
 }

@@ -4,19 +4,29 @@ header {
   padding: 11px 20px 16px 20px;
 }
 
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header__logo {
   &:hover {
     opacity: 0.8;
   }
+
   &:active {
     opacity: 0.6;
   }
+
   .st0 {
-      fill: #FDC305;
+    fill: #fdc305;
   }
+
   .st1 {
-      fill: #F06351;
-    }
+    fill: #f06351;
+  }
+
   .st2 {
     fill: $Black;
   }

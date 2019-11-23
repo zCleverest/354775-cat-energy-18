@@ -1,7 +1,13 @@
 .copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
   &:hover {
     .copyright__image {
       transition: 0.5s;
+
       svg {
         fill: $Green;
       }
@@ -14,9 +20,10 @@
   }
 
   &:active {
-    .copyright__image{
+    .copyright__image {
       opacity: 0.3;
     }
+
     .copyright__text {
       opacity: 0.3;
     }
@@ -37,5 +44,15 @@
 
   svg {
     fill: #666666;
+  }
+}
+
+/* =====================================================================================
+Media min-width: 768px*/
+
+@media (min-width: 768px) {
+  .copyright {
+    width: 162px;
+    flex-shrink: 0;
   }
 }
