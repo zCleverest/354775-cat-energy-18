@@ -1,7 +1,38 @@
 body {
+  margin: 0;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: $Black;
   background-color: #ffffff;
+}
+
+* {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+
+  &::after {
+    box-sizing: inherit;
+  }
+
+  &::before {
+    box-sizing: inherit;
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style-type: none;
 }
